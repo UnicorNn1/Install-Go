@@ -30,6 +30,45 @@ go version
 ```
 This will install Go version 1.17rc2 on your system. You can use the `go` command to compile and run Go programs with this version.
 # Or [install Go](https://go.dev/doc/install) (also known as Golang) 
+## Install Golang for Linux/Ubuntu
+To install Golang on a Linux/Ubuntu system, you can follow these steps:
+
+First, update your system packages:
+```bash
+sudo apt update
+```
+Install the required dependencies:
+```bash
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
+```
+Download the latest Golang release from the official website:
+```bash
+wget https://golang.org/dl/go1.18rc1.linux-amd64.tar.gz
+```
+Extract the downloaded archive to the `/usr/local` directory:
+```bash
+sudo tar -xvf go1.18rc1.linux-amd64.tar.gz -C /usr/local
+```
+Set the `GOPATH` environment variable. This is the directory where your Go workspace will be located. You can add the following line to your `~/.bashrc` file:
+```bash
+export GOPATH=$HOME/go
+```
+Add the Go `bin` directory to your PATH environment variable. You can add the following line to your `~/.bashrc` file:
+```bash
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+```
+Apply the changes to your current session:
+```bash
+source ~/.bashrc
+```
+Verify the installation by checking the Go version:
+```bash
+go version
+```
+This will install Golang on your Linux/Ubuntu system. You can now use the `go` command to compile and run Go programs.
+## Note: The above instructions are for a Linux/Ubuntu system. The installation process may be different for other operating systems. You can find the official installation instructions for other operating systems on the Go website.
+install [Golang](https://go.dev/doc/tutorial/getting-started)
+
 
 
 
