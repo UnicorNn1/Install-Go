@@ -1,4 +1,4 @@
-# Install-Golang
+# Install-Go(Golang)
 ## Download the Go distribution for Linux from the official website. For example, you can use the following command to download Go version 1.18rc1:
 
 ```bash
