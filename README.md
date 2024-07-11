@@ -69,15 +69,25 @@ This will install Golang on your Linux/Ubuntu system. You can now use the `go` c
 ## Note: The above instructions are for a Linux/Ubuntu system. The installation process may be different for other operating systems. You can find the official installation instructions for other operating systems on the Go website.
 install [Golang](https://go.dev/doc/tutorial/getting-started)
 ## Install Golang
-```bash
-cd $HOME 
+```sh
+cd $HOME
+```
+```sh
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" 
-
-sudo rm -rf /usr/local/go 
-sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" 
+```
+```sh
+sudo rm -rf /usr/local/go
+```
+```sh
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
+```
+```sh
 rm "go$ver.linux-amd64.tar.gz"
-
+```
+```sh
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
+```
+```sh
 source $HOME/.bash_profile
 ```
 ## Install Go 
